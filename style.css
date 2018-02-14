@@ -78,6 +78,7 @@ ul.nobullets {
   /*mellanrum mellan rad, inget, samma, flyttar till höger*/
   margin: -1px 0 -1px 0; 
   /* background-color: white !important; */
+
 }
 
 .navbar.navbar-default {
@@ -330,6 +331,10 @@ and (orientation : landscape) {
     /* margin-right: 0%; */
 }
 @media only screen and (max-width: 767px) {
+    /* ul{
+        width: 50%;
+        float: left;
+      } */
     .rectangle {
         /* position: fixed;
         position: -webkit-sticky;
@@ -378,6 +383,12 @@ and (orientation : landscape) {
         width: 61%;
         bottom: 0px;
     }
+    #navbar
+{
+ overflow-y: scroll !important;
+max-height: 200px !important;
+}
+ 
 }
 
 @media screen and (max-width: 703px) { 
