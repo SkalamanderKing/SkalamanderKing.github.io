@@ -1,0 +1,511 @@
+html {
+    position: relative;/*tillhör sticky footer*/
+    min-height: 100%;/*tillhör sticky footer*/
+    /* overflow:hidden; */
+    margin: 0;
+	padding: 0;
+  }
+
+body {
+    /* background-color: red !important; */
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 60px; /*tillhör sticky footer*/
+
+}
+h1 {
+	margin: 0.4em 0 0.1em 0;
+    font-size: 1.70em;
+    font-weight: 600;
+}
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    font-size: 0.85em;
+    margin: 0 0 10px 0;
+    line-height: 140%;
+    /* display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; */
+}
+i {
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    font-size: 0.85em;
+    margin: 0 0 10px 0;
+    line-height: 140%;
+}
+ul.nobullets {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.85em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.img-responsive {
+  width: 100%;
+    height: auto;
+}
+::-webkit-scrollbar { 
+    /* display: none;  */
+}
+/* .navbar{
+    position: absolute;
+    z-index: 1;
+} */
+.navbar.navbar-default.navbar-fixed-left {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    /* height: 100%;  */
+ /*move entire navbar and heading*/
+    margin-top: 23px; 
+    /*move entire navbar and heading*/
+    margin-left: 120px; 
+        width: 0px; 
+}
+
+.nav.navbar-nav li a {
+
+  color: black;
+  /* text-decoration: none; */
+  font-family: Helvetica, Arial, sans-serif;
+  width: 104px; /*vidden på nav bar, ska troligen justeras*/
+  font-size: 0.8em;
+  font-weight: 650;
+  padding: 0px 20px; /*mellanrum mellan ord och bredd på navbar*/
+  /*mellanrum mellan rad, inget, samma, flyttar till höger*/
+  margin: -1px 0 -1px 0; 
+  /* background-color: white !important; */
+}
+
+.navbar.navbar-default {
+    background-color: white;
+  /* position: relative; */
+  border: 0; /*utan denna flyttar allt lite*/
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  /* background-color: red !important; */
+  margin: 0 0 0 0;
+   /*inget, flyttar till vä, inget, inget*/
+  /* z-index: -1; */
+  
+ 
+  
+}
+ul{
+    /* overflow:hidden;
+    overflow-x: hidden; */
+}
+.navbar.navbar-default .navbar-collapse{
+    /* position: absolute; */
+    /* z-index: -2; */
+    
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 99px 0 0 -120px; /*flyytar ner navbar, inget, collaps höjd/(fix), kapar collaps vä */
+  /* background-color: white!important; */
+  /* background-color: red !important; */
+
+}
+
+.navbar-collapse{
+    /* width: 100%; */
+    /* padding-top:10px; */
+    /* padding-left: 230px; */
+    border: 0;
+}
+.navbar-toggle .icon-bar {
+    transition: 300ms ease-in-out;
+    /* background-color: #fff; */
+    position: relative;
+    width:  24px;
+    height: 3px;
+  }
+  .navbar-toggle .icon-bar:last-child {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -7px;
+  }
+  .navbar-toggle .icon-bar:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+
+    
+  }
+  .navbar-toggle .icon-bar:nth-child(1) {
+    opacity: 0;
+  }
+  .navbar-toggle.collapsed .icon-bar {
+      
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 0;
+    opacity: 1;
+  }
+
+
+  #logo{
+     /* position: absolute; */
+/* height: auto;   */
+}
+.rectangle {
+    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 142px;
+    width: 100%;
+    /* background-color: #555; */
+    background-color: white;
+  }
+
+#news {
+	color: #8080BB;
+	font-size: 0.99em; /*TODO*/
+	/* font-weight: 100; */
+    font-style: italic;
+
+    position: absolute;
+    top: 90px;
+/* height: 200px; */
+    width: 464px;
+    /* margin-left: -23.80%; */
+    margin-left: 15px;
+	/* margin:0 0 8px 0;  */
+	padding: 0 0 3px 0;
+	/* width: 100%; */
+    border-bottom: 1px solid #8080BB;
+    letter-spacing: -0.15px;
+    /* background-color: yellow !important; */
+    
+}
+
+.container {
+    width: 474px;
+    border: none;
+    /* position: relative; */
+    /* overflow: scroll; */
+    top: 168px;
+    /* margin-left: 7.1%; */
+    margin-left: 119px;
+   /* margin-bottom: 20px; */
+   /* margin-top: 140px; */
+	/* float: left; */
+    /* margin: 141px 0 0 -315px; */
+    /* position: absolute; */
+            /* z-index: 10000000; */
+            /* background-color: orange !important; */
+    
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+#footer {
+  color: #8080bb;
+  font-size: 0.99em; /*TODO*/
+  font-style: italic;
+  border-bottom: 1px solid #8080bb;
+  text-align: right;
+  /* margin: 0px 0 14px -0px;
+    padding: 20px 0 3px 0; */
+
+  /* clear: both; */
+margin-left:120px;
+  /*nedan är sticky footer kod, ska fixas*/
+  /* position: fixed; */
+  /* bottom: 90px; */
+  width: 464px;
+
+  position: absolute;
+  bottom: 0px;
+  /* margin-left: 7.15%; */
+
+  /* width: 27.7%; */
+  /* Set the fixed height of the footer here */
+  /* height: 60px; */
+  /* background-color: #f5f5f5; */
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+    } */
+/* @media (min-width:768px) {
+    .container {
+        width: 503px
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 723px
+    }
+
+ 
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 923px
+    }
+
+}
+
+@media (min-width:1432px) {
+    .container {
+        width: 1170px
+    }
+
+} */
+/* 
+.mobileHide {
+  visibility: hidden;
+} */
+
+#logo{
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+@media (max-width: 800px) {
+    .nav.navbar-nav li a { 
+        font-size: 0.9em;
+        margin-top: 0.7em; /*mellanrum mellan ord menu*/
+    }
+
+}
+/* @media (min-width: 767px) { */
+  /* .navbar-fixed-left{ */
+    /* width: 60px;  */
+    /* width: 0px;  */
+    /*ser till att navbar är på rad när stor skärm och ej blir för liten etc*/
+
+  /* } */
+  /* #logo{ */
+    /* position: absolute; */
+/* height: auto;  */
+/* } */
+
+
+/* } */
+
+#hamburger {
+    top: 48px;
+    /* margin-right: 0%; */
+}
+@media only screen and (max-width: 767px) {
+    .rectangle {
+        /* position: fixed;
+        position: -webkit-sticky;
+        position: sticky; */
+        top: 0;
+        height: 141px;
+        width: 100%;
+        /* background-color: pink; */
+        /* background-color: white; */
+      }
+
+    #logo{
+        /*flyttar logo*/
+        margin-top: 23px; 
+        padding-left: 110px;
+        width: 100%;
+   
+    }
+    /*navbar innan man trycker på knapp*/
+    .navbar.navbar-default.navbar-fixed-left {
+        width: auto; 
+        margin-top: 0px; 
+        margin-left: 0%; 
+        background-color: transparent;
+    }
+
+    #news { 
+        margin-top: 33px; 
+        margin-left: 128px;
+        width:71%;
+    }
+    /*Navbar när man trycker på knapp*/
+    .navbar.navbar-default .navbar-collapse{
+        margin-top: 89px;
+        width: 71%;
+        margin-left: 128px;
+        background-color: rgba(221, 221, 221, 0.9);
+    }
+    .container {
+        margin-left: 120px;
+        width: 62.7%;
+    }
+    #footer {
+        position: absolute;
+        margin-left: 122px;
+        width: 61%;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 703px) { 
+    .rectangle {
+        height: 116px;
+      }
+    #logo{
+        margin-top: 10px; 
+        padding-left: 32px;
+        width: 100%;
+    }
+    #news { 
+        top:65px;
+        margin-left: 50px;
+        width:86%;
+    }
+    .navbar.navbar-default .navbar-collapse{
+        margin-top: 64px;
+        margin-left: 50px;
+        width: 86%;
+    }
+    .container {
+        margin-left: 40px;
+        width: 75%;
+    }
+    #footer { 
+        margin-left: 40px;
+        width: 72%;
+    }
+}
+
+@media screen and (max-width: 603px) { 
+    .rectangle {
+        height: 97px;
+      }
+    .navbar.navbar-default.navbar-fixed-left { 
+
+        width: 90%; 
+        /* margin-top: 0px; 
+        margin-left: 0%;  */
+    }
+    .navbar-brand{
+        width: 80%;
+    }
+    #logo{
+        margin-top: 2%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    #hamburger {
+        margin-top: -3%;
+     /* margin-right: 6%; */
+    }
+    #news { 
+        top:85px;
+        width: 90%;
+        margin-top: -3px;
+        font-size: 0.80em; /*TODO*/
+        margin-left: 6.3%;
+        /* background-color: green !important;
+        z-index: 10000000000!important; */
+
+    }
+    .navbar.navbar-default .navbar-collapse{
+        margin-top: 48px;
+        width: 90%;
+          margin-left: 6.3%;
+    }
+    .container {
+        /* margin-left: 18%; */
+        margin-top: -6px;
+        width: 85%;
+        margin-left: 3.5%;
+
+    }
+    #footer { 
+        width: 83.2%;
+        font-size: 0.80em; /*TODO*/
+        margin-left: 2%;
+    }
+   
+    h1 {
+        /* margin: 0.4em 0 0.1em 0; */
+        font-size: 1.40em;
+        /* font-weight: 600; */
+    }
+}
+@media screen and (max-width: 480px) { 
+
+    .rectangle {
+        height: 79px;
+      }
+    #logo{
+         margin-top: 0px;
+         margin-left: 0%;
+           width: 100%;  
+    margin-bottom: -10px;
+    }
+    #hamburger {
+        margin-top: -7%;
+     margin-right: -5%;
+    }
+    #news { 
+        width: 100%;
+        margin-top: -21px;
+        margin-left: 5.6%;
+    }
+    .navbar.navbar-default .navbar-collapse{
+        margin-top: 30px;
+        width: 100%;
+          margin-left: 5.6%;
+    }
+    .container {
+        top:50px;
+        width: 95%;
+        margin-top: 2px;
+        padding-top: 0;
+        margin-left: 1.9%;
+    }
+    #footer { 
+        width: 92.5%;
+        margin-left: 0;
+    }
+ 
+    h1 {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding: 0;
+        /* font-size: 1.10em; */
+        /* font-weight: 600; */
+    }
+    /* .youtube {
+
+    } */
+
+}
+@media screen and (max-width: 320px) { 
+ 
+    #hamburger {
+        margin-top: -13%;
+
+    }
+ 
+}
