@@ -293,11 +293,14 @@ margin-left:120px;
 }
 
 
-@media only screen and (max-width: 768px) and (min-width: 1024px)  {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {     
     .nav.navbar-nav li a { 
-        font-size: 0.9em;
-        margin-top: 0.7em; /*mellanrum mellan ord menu*/
-    }
+    font-size: 0.9em;
+    margin-top: 0.7em; 
+}
 }
 
 @media (max-width: 992px) {
