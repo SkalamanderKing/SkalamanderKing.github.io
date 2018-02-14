@@ -291,10 +291,14 @@ margin-left:120px;
     /* width: 100%; */
     /* height: auto; */
 }
-.touch .nav.navbar-nav li a {
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .nav.navbar-nav li a { 
         font-size: 0.9em;
-        margin-top: 0.7em;
-}
+        margin-top: 0.7em; /*mellanrum mellan ord menu*/
+    }
+  }
+
 @media (max-width: 800px) {
     .nav.navbar-nav li a { 
         font-size: 0.9em;
