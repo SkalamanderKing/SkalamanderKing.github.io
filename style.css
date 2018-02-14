@@ -30,7 +30,7 @@ p {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px; */
 }
-i {
+.date {
     font-family: Helvetica, Arial, sans-serif;
     overflow: hidden;
     font-size: 0.85em;
@@ -197,7 +197,7 @@ ul{
     /* overflow: scroll; */
     top: 168px;
     /* margin-left: 7.1%; */
-    margin-left: 119px;
+    margin-left: 120px;
    /* margin-bottom: 20px; */
    /* margin-top: 140px; */
 	/* float: left; */
@@ -212,7 +212,9 @@ ul{
 	padding-bottom:56.25%;
 	padding-top:30px;
 	height:0;
-	overflow:hidden;
+    overflow:hidden;
+    border: 0;
+    z-index: -1;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
