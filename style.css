@@ -291,7 +291,10 @@ margin-left:120px;
     /* width: 100%; */
     /* height: auto; */
 }
-
+.touch .nav.navbar-nav li a {
+        font-size: 0.9em;
+        margin-top: 0.7em;
+}
 @media (max-width: 800px) {
     .nav.navbar-nav li a { 
         font-size: 0.9em;
