@@ -42,6 +42,7 @@ ul.nobullets {
     margin-top: 23px;
     margin-left: 120px; 
     width: 0px; 
+    z-index: 1;
 }
 
 .nav.navbar-nav li a {
@@ -107,6 +108,7 @@ ul.nobullets {
     height: 142px;
     width: 100%;
     background-color: white;
+    z-index: 1;
   }
 
 #news {
@@ -121,21 +123,28 @@ ul.nobullets {
     border-bottom: 1px solid #8080BB;
     letter-spacing: -0.15px;
 }
+.title_img {
+    width:140px; 
+    height: 200px;
+    margin-top: 4px;
+}
 
 .container {
-    width: 474px;
+    width: 488px;  /*  width: 474px;*/
     border: none;
     top: 168px;
     margin-left: 120px;
 }
 
 .piclist {
+
     padding-left: 0px;
     padding-right: 1.1em;
     margin-left: 0px;
 	display: table-cell;
-    list-style-type: none;
+    list-style-type: none!important;
 }
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -143,7 +152,7 @@ ul.nobullets {
 	height:0;
     overflow:hidden;
     border: 0;
-    z-index: -1;
+
 }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -151,10 +160,21 @@ ul.nobullets {
 	top:0;
 	left:0;
 	width:100%;
-	height:100%;
+    height:100%;
 }
+
 #hamburger {
     top: 48px;
+}
+
+.sc-jKJlTe.eDFoIG {
+    background-color: white!important;
+}
+.sc-ifAKCX.kqqTha {
+    background-color: white!important;
+}
+.tmp {
+    margin-left:145px;
 }
 #footer {
   position: absolute;
@@ -263,6 +283,21 @@ and (orientation : landscape) {
     }
 }
 
+@media screen and (max-width: 622px) { 
+    #logo{
+        margin-top: 2%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    #hamburger{
+        margin-top: -3%;
+    }
+    .tmp{
+        margin-left: 60px;
+        height: 40%;
+    }
+}
+
 @media screen and (max-width: 603px) { 
     .rectangle {
         height: 97px;
@@ -349,9 +384,28 @@ and (orientation : landscape) {
         margin-bottom: 0%;
         padding: 0;
     }
+    .tmp{
+        margin-left: 20px;
+    }
 }
+
+@media screen and (max-width:390px) { 
+    #logoPress{
+        margin-top: -50px;
+        margin-left: -10%;
+
+   }
+    #hamburgerPress {
+        margin-top: -0px
+    }
+    /* .navbar.navbar-default .navbar-collapse{
+        margin-top: 30px;
+        width: 100%;
+          margin-left: 5.6%;
+    } */
 @media screen and (max-width: 320px) { 
     #hamburger {
-        margin-top: -13%;
+        margin-top: -13%!important;
     }
+
 }
