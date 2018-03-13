@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+    height: 100%;
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0;
+    border: none;
+    /* background-color: #000; */
+  overflow: hidden
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: orangered;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+.rub{
+
+  color: mintcream;
+  text-shadow: 3px 2px gray;
+  position: absolute;
+  left: 0;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 68px;
+  /* width: 300px; */
+  /* border: 3px solid #73AD21; */
+}
+/* Style the content */
+.content {
+  background-color: #ddd;
+  /* padding: 10px; */
+  background-image: url("../img/sida8.png");
+  background-repeat: no-repeat;
+  height: 100%; 
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+}
+.container {
+  position: relative;
+bottom: 0%;
+  width: 200px; 
+  height: 870px; 
+
+  left: 67%;
+}
+#lamp{ 
+  position: relative;
+  max-height: 100%;
+}
+#home{ 
+  position: absolute;
+  top: 270px; 
+  right: 133px;
+}
+#about{ 
+  position: absolute;
+  top: 316px; 
+  right: 133px;
+}
+#birdy{ 
+  position: absolute;
+  top:50%;
+  left: 31%;
+}
+
+
+
+div.square {
+    position: absolute;
+    border: solid 2px #f0f;
+         width: 5%;
+    height: 14%; 
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+    top: 1%;
+    right: 21%;
+  }
+  /* .master{
+    position: absolute;
+    z-index:1;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  } */
+.footer {
+  /* position: absolute; */
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .container {
+  bottom: -5%;
+    left: 67%;
+  }
+  #lamp{ 
+    max-height: 90%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #birdy{ 
+    position: absolute;
+    top:50%;
+    left: 17%;
+  }
+  #lamp{ 
+    top:6%;
+  }
+}
+@media only screen 
+and (width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation: portrait)
+ {
+  #lamp{ 
+    top:30%;
+  }
+  #home{ 
+    top: 55%; 
+    right: 138px;
+  }
+  #about{ 
+    top: 60%; 
+    right: 138px;
+  }
+  #birdy{ 
+
+    top:50%;
+    left: 17%;
+  }
+}
+@media only screen 
+and (width : 375px) 
+and (max-device-width : 667px) 
+and (orientation: portrait)
+ { 
+  #lamp{ 
+    top:10%;
+  }
+  #home{ 
+    top: 41%; 
+    right: 143px;
+    width: 120%;
+  }
+  #about{ 
+    top: 46%; 
+    right: 143px;
+    width: 120%;
+  }
+  #birdy{ 
+
+    top:10%;
+    left: 0%;
+  }
+ }
+@media only screen 
+and (width : 320px) 
+and (max-device-width : 568px) 
+and (orientation: portrait)
+ { 
+  #home{ 
+    top: 36%; 
+    right: 138px;
+    width: 120%;
+  }
+  #about{ 
+    top: 41%; 
+    right: 138px;
+    width: 120%;
+  }
+  #birdy{ 
+
+    top:50%;
+    left: 0%;
+  }
+ }
+ @media only screen 
+and (width : 375px) 
+and (max-device-width : 812px) 
+and (orientation: portrait)
+ { 
+  #lamp{ 
+    top:5%;
+  }
+  #home{ 
+    top: 30%; 
+    right: 138px;
+    width: 120%;
+  }
+  #about{ 
+    top: 35%; 
+    right: 138px;
+    width: 120%;
+  }
+
+ }
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  #birdy{ 
+    position: absolute;
+    top:50%;
+    left: 0%;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
+
